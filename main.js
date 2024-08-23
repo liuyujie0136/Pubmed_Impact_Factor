@@ -12,9 +12,10 @@ function getSingleIF(newBlock, callback){
 			var imfQ = dataSource[journalName.toUpperCase()];
 			if (imfQ !== undefined){
 				var impactFactor = imfQ[0];
-				var q = imfQ[1];
+				var impactFactor5years = imfQ[1];
+				var q = imfQ[2];
 				ifList.push(impactFactor);
-				journalVitation.html(journalVitation.text().replace(journalName, `<b><i>${journalName}</i></b> (IF: <span class="if"><u>${impactFactor}</u></span><span>; </span><span class="quartile"><b>${q}</b></span>)`));
+				journalVitation.html(journalVitation.text().replace(journalName, `<b><i>${journalName}</i></b> (IF23: <span class="if"><u>${impactFactor}</u></span>; IF5y: <span class="if"><u>${impactFactor5years}</u></span>; <span class="quartile"><b>${q}</b></span>)`));
 			}
 
 			else{
@@ -156,10 +157,10 @@ function getSingleIF(newBlock, callback){
 		var imfQ = dataSource[journalName1.toUpperCase()];
 		if (imfQ !== undefined){
 			var impactFactor = imfQ[0];
-			var q = imfQ[1];
-			//console.log(imfQ);
+			var impactFactor5years = imfQ[1];
+			var q = imfQ[2];
 			ifList.push(impactFactor);
-			$(this).html($(this).html().replace(journalName1, `<b><i>${journalName1}</i></b> (IF: <span class="if"><u>${impactFactor}</u></span><span>; </span><span class="quartile"><b>${q}</b></span>)`));
+			$(this).html($(this).html().replace(journalName1, `<b><i>${journalName1}</i></b> (IF23: <span class="if"><u>${impactFactor}</u></span>; IF5y: <span class="if"><u>${impactFactor5years}</u></span>; <span class="quartile"><b>${q}</b></span>)`));
 		}
 
 		else{
