@@ -15,7 +15,7 @@ function getSingleIF(newBlock, callback){
 				var impactFactor5years = imfQ[1];
 				var q = imfQ[2];
 				ifList.push(impactFactor);
-				journalVitation.html(journalVitation.text().replace(journalName, `<b><i>${journalName}</i></b> (IF23: <span class="if"><u>${impactFactor}</u></span>; IF5y: <span class="if"><u>${impactFactor5years}</u></span>; <span class="quartile"><b>${q}</b></span>)`));
+				journalVitation.html(journalVitation.text().replace(journalName, `<b><i>${journalName}</i></b> (IF23: <span class="if"><u>${impactFactor}</u></span>; IF5y: <span class="if5y"><u>${impactFactor5years}</u></span>; <span class="quartile"><b>${q}</b></span>)`));
 			}
 
 			else{
@@ -160,7 +160,7 @@ function getSingleIF(newBlock, callback){
 			var impactFactor5years = imfQ[1];
 			var q = imfQ[2];
 			ifList.push(impactFactor);
-			$(this).html($(this).html().replace(journalName1, `<b><i>${journalName1}</i></b> (IF23: <span class="if"><u>${impactFactor}</u></span>; IF5y: <span class="if"><u>${impactFactor5years}</u></span>; <span class="quartile"><b>${q}</b></span>)`));
+			$(this).html($(this).html().replace(journalName1, `<b><i>${journalName1}</i></b> (IF23: <span class="if"><u>${impactFactor}</u></span>; IF5y: <span class="if5y"><u>${impactFactor5years}</u></span>; <span class="quartile"><b>${q}</b></span>)`));
 		}
 
 		else{
