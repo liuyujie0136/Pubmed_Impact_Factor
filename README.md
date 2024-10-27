@@ -14,3 +14,6 @@
 ## v6.0.3
 - Fix the fatal error in filtering search results using IF
 - Fix some inconsistencies between Clarivate's JCR and PubMed in journal abbreviations
+
+## v6.0.4
+- Fix some inconsistencies between Clarivate's JCR and PubMed in journal abbreviations

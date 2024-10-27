@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pubmed Impact Factor",
-  "version": "6.0.3",
+  "version": "6.0.4",
   "content_scripts": [
     {
       "matches": [
